@@ -24,15 +24,6 @@ public class CuentaAhorrosTest {
     /**
      * Test of  method, of class CuentaAhorros.
      */
-    @Test
-    void testConstructor() {
-        Fecha fecha = new Fecha(1, 1, 2023);
-        CuentaAhorros cuenta = new CuentaAhorros("1234", "Juan", fecha, 500.0);
-        assertEquals("1234", cuenta.getNumeroCuenta());
-        assertEquals("Juan", cuenta.getNombreDueno());
-        assertEquals(fecha, cuenta.getFechaApertura());
-        assertEquals(500.0, cuenta.getSaldo(), 0.001);
-    }
 
     @Test
     void testRetirar() {

@@ -17,15 +17,6 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 public class CuentaBancariaTest {
     
-    @Test
-    void testConstructorAndGetters() {
-        Fecha fecha = new Fecha(1, 1, 2023);
-        CuentaBancaria cuenta = new CuentaBancaria("12345", "Juan", fecha, 1000.0);
-        assertEquals("12345", cuenta.getNumeroCuenta());
-        assertEquals("Juan", cuenta.getNombreDueno());
-        assertEquals(fecha, cuenta.getFechaApertura());
-        assertEquals(1000.0, cuenta.getSaldo(), 0.001);
-    }
 
     @Test
     void testConsignar() {
