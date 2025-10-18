@@ -31,7 +31,7 @@ public class GestorCuentasTest {
     void testCrearCuentaCorriente() {
         CuentaCorriente cuenta = GestorCuentas.crearCuentaCorriente("1234", "Pedro", 1, 1, 2023, 200.0, 500.0);
         assertNotNull(cuenta);
-        assertEquals("222", cuenta.getNumeroCuenta());
+        assertEquals("1234", cuenta.getNumeroCuenta());
         assertEquals("Pedro", cuenta.getNombreDueno());
         assertEquals(200.0, cuenta.getSaldo(), 0.001);
         assertEquals(500.0, cuenta.getCupoSobregiro(), 0.001);
